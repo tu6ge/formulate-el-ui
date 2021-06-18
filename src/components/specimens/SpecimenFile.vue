@@ -52,19 +52,36 @@
     </div>
     <div class="specimen">
       <h3>Image</h3>
-      <FormulateInput
-        label="What do you look like?"
-        type="image"
-        help="Select a picture to upload."
-        multiple
-      />
+      <FormulateForm 
+        v-model="formValues"
+        @submit="sendData"
+      >
+        <FormulateInput
+          label="What do you look like?"
+          type="image"
+          name="avatar"
+          help="Select a picture to upload."
+          multiple
+        />
+        <FormulateInput type="submit" label="submit"></FormulateInput>
+      </FormulateForm>
+      <code v-text="formResult" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      formValues:{},
+      formResult:{}
+    }
+  },
   methods: {
+    sendData(value){
+      this.formResult = value;
+    },
     async uploadToS3 (file, progress, error, options) {
       const matches = file.name.match(/\.([a-zA-Z0-9]+)$/)
       const extension = (matches) ? matches[1] : 'txt'

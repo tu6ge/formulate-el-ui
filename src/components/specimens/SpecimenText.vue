@@ -19,6 +19,15 @@
       />
     </div>
     <div class="specimen">
+      <h3>Date 2021-6-18 之前</h3>
+      <FormulateInput
+        label="Select a day."
+        type="date"
+        help="Choose your birthday."
+        validation="before:2021-6-18"
+      />
+    </div>
+    <div class="specimen">
       <h3>Datetime-local</h3>
       <FormulateInput
         label="Select a day and time."

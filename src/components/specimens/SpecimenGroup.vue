@@ -122,6 +122,7 @@
         validation="in:vanilla"
         help="You can choose more than one selection by holding command (mac) or option (windows)."
       />
+      <FormulateInput type="submit" label="提交"></FormulateInput>
     </div>
   </div>
 </template>
