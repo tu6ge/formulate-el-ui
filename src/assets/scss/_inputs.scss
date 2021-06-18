@@ -41,7 +41,7 @@
   .formulate-file-upload-error {
     color: $formulate-error;
     font-size: .8em;
-    font-weight: 300;
+    font-weight: normal;
     line-height: 1.5;
     margin-bottom: .25em;
   }
@@ -114,10 +114,14 @@
       .formulate-input-label--before{
         width: $formulate-label-width-min;
       }
+
+      .formulate-input-help--after,.formulate-input-errors{
+        margin-left: $formulate-label-width-min;
+      }
     }
 
     .formulate-input-help--after,.formulate-input-errors{
-      margin-left: $formulate-label-width-min;
+      margin-left: $formulate-label-width;
     }
 
     .formulate-input-group-add-more{
@@ -196,6 +200,36 @@
       }
     }
   }
+
+  &[data-classification="text"] {
+    &[data-is-showing-errors='true'] {
+      input[type='text'],
+      input[type='password'],
+      input[type='color'],
+      input[type='date'],
+      input[type='datetime-local'],
+      input[type='month'],
+      input[type='number'],
+      input[type='time'],
+      input[type='search'],
+      input[type='tel'],
+      input[type='url'],
+      input[type='week'],
+      input[type='email'] {
+        border-color: $formulate-error;
+      }
+    }
+  }
+
+  &[data-classification="select"] {
+    &[data-is-showing-errors='true'] {
+      select {
+        border-color: $formulate-error;
+      }
+    }
+  }
+
+
 
 // Slider inputs
 // -----------------------------------------------------------------------------
