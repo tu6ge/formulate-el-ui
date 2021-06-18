@@ -123,7 +123,7 @@ h2 {
 }
 
 .specimen {
-  max-width: 400px;
+  //max-width: 400px;
   padding: 1em;
   box-sizing: border-box;
 
