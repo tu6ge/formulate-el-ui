@@ -317,6 +317,10 @@
 // -----------------------------------------------------------------------------
 
 &[data-classification='button'] {
+  .formulate-input-wrapper > [data-type="submit"] {
+    margin-left: $formulate-label-width;
+  }
+
   button {
     @include baseinput;
     border-color: $formulate-green;
