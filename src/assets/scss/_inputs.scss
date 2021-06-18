@@ -55,7 +55,9 @@
   &[data-classification='group'],
   &[data-classification='select'],
   &[data-classification='slider'],
-  &[data-classification='textarea'] {
+  &[data-classification='textarea'],
+  &[data-classification='file'],
+  &[data-classification='image'] {
     .formulate-input-wrapper{
       display:flex;
 
@@ -83,7 +85,9 @@
     }
   }
 
-  &[data-classification='textarea'] {
+  &[data-classification='textarea'],
+  &[data-classification='file'],
+  &[data-classification='image'] {
     .formulate-input-wrapper{
       align-items: flex-start;
 
@@ -600,7 +604,7 @@
 
   &[data-classification="file"] {
     .formulate-input-upload-area {
-      width: 100%;
+      width: 250px;
       position: relative;
       padding: 2em 0;
 
