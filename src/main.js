@@ -3,6 +3,7 @@ import Vue from 'vue'
 import VueFormulate from '@braid/vue-formulate'
 import FormulateSpecimens from './components/FormulateSpecimens.vue'
 import zh from './i18n/zh.js'
+import CheckboxHelp from './extends/checkbox.js'
 
 Vue.config.productionTip = false
 
@@ -15,7 +16,7 @@ const ElThem = function (instance) {
 }
 
 Vue.use(VueFormulate, {
-  plugins: [zh, ElThem],
+  plugins: [zh, ElThem, CheckboxHelp],
   locale: 'zh'
 })
 

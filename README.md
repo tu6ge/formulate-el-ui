@@ -18,11 +18,13 @@ yarn add formulate-el-ui
 在你的 `main.js` 文件的适当位置加上如下代码：
 ```
 import 'formulate-el-ui/src/assets/scss/element-ui.scss';
+import CheckboxHelp from 'formulate-el-ui/src/extends/checkbox.js'
 
 Vue.use(VueFormulate, {
   classes: {
     outer: 'el-formulate-input'
-  }
+  },
+  plugins: [CheckboxHelp] // CheckboxHelp 用于解决 checkbox 组件中 help 信息展示位置错误的问题
 })
 ```
 
