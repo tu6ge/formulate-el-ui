@@ -2,23 +2,19 @@
 
 ## Project setup
 ```
-yarn install
+yarn add formulate-el-ui
 ```
 
-### Compiles and hot-reloads for development
+### use
 ```
-yarn serve
+import 'formulate-el-ui/src/assets/scss/element-ui.scss';
+
+Vue.use(VueFormulate, {
+  classes: {
+    outer: 'el-formulate-input'
+  }
+})
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Documents
+See [vueformulate docs](https://vueformulate.com/).
