@@ -91,7 +91,37 @@
           placeholder="User’s email"
           validation="required|email"
         />
+        <FormulateInput
+          label="总统"
+          type="radio"
+          :options="{trump: 'Trump', obama: 'Obama'}"
+          validation="in:trump"
+        />
       </FormulateInput>
+      <FormulateInput
+        label="总统"
+        type="checkbox"
+        :options="{trump: 'Trump', obama: 'Obama', bush: 'Bush', clinton: 'Clinton'}"
+        validation="min:1"
+      />
+      <FormulateInput
+        label="总统"
+        type="radio"
+        :options="{trump: 'Trump', obama: 'Obama', bush: 'Bush', clinton: 'Clinton'}"
+        validation="in:trump"
+      />
+      <FormulateInput
+        label="姓名"
+        type="text"
+        validation="required"
+      />
+      <FormulateInput
+        label="选择花"
+        type="select"
+        :options="{vanilla: 'Vanilla', chocolate: 'Chocolate', cherry: 'Cherry', lemon: 'Lemon'}"
+        validation="in:vanilla"
+        help="You can choose more than one selection by holding command (mac) or option (windows)."
+      />
     </div>
   </div>
 </template>
