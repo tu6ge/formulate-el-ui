@@ -122,6 +122,18 @@
         validation="in:vanilla"
         help="You can choose more than one selection by holding command (mac) or option (windows)."
       />
+      <FormulateInput
+        label="联系电话"
+        type="text"
+        validation="mobile"
+        help="请输入一个手机号码"
+      />
+      <FormulateInput
+        label="身份证"
+        type="text"
+        validation="idcard"
+        help="请输入一个身份证号码"
+      />
       <FormulateInput type="submit" label="提交"></FormulateInput>
     </div>
   </div>
