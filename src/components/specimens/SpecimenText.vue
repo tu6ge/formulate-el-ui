@@ -134,15 +134,22 @@
       />
     </div>
     <div class="specimen">
-      <h3>Form label width</h3>
-      <FormulateForm form="110px">
-        <FormulateInput
-          label="I don’t know who would use this field."
-          type="week"
-          placeholder="Pick a week"
-          help="What week is it?"
-        />
-      </FormulateForm>
+      <h3>el input</h3>
+      <FormulateInput
+        label="I don’t know who would use this field."
+        type="el-input"
+        value="bar"
+        clearable
+        help="What week is it?"
+      />
+      <FormulateInput
+        label="I don’t know who would use this field."
+        type="el-input"
+        value="bar"
+        maxlength="10"
+        show-word-limit
+        help="What week is it?"
+      />
     </div>
   </div>
 </template>
