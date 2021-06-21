@@ -25,6 +25,7 @@ import SpecimenButton from './specimens/SpecimenButton'
 import SpecimenBox from './specimens/SpecimenBox'
 import SpecimenSlider from './specimens/SpecimenSlider'
 import SpecimenSelect from './specimens/SpecimenSelect'
+import 'element-ui/lib/theme-chalk/index.css'
 
 export default {
   name: 'App',

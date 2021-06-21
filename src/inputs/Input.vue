@@ -11,8 +11,6 @@
 </template>
 <script>
 import {Input} from 'element-ui'
-import 'element-ui/lib/theme-chalk/input.css'
-import 'element-ui/lib/theme-chalk/icon.css'
 
 export default {
   props: {
