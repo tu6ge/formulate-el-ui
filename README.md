@@ -2,6 +2,10 @@
 
 本项目为 `vueformulate` 项目加上了 `element-ui` 皮肤，可以让你在 `element-ui` 项目中使用 `vueformulate` 时保持风格统一
 
+## 语义化版本
+
+本项目遵循 [语义化版本 2.0](https://semver.org/lang/zh-CN/) 
+
 ## 在安装之前，需要安装如下 npm 包
 
 - @braid/vue-formulate
