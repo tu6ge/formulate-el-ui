@@ -1,15 +1,14 @@
-import Vue from 'vue'
-
 import FeCascader from './Cascader.vue'
 import FeInput from './Input.vue'
 import FePrivateFormulateInputFile from './FormulateInputFile.vue'
 
-Vue.component('FeCascader', FeCascader)
-Vue.component('FeInput', FeInput)
-Vue.component('FePrivateFormulateInputFile', FePrivateFormulateInputFile)
-
 export default function (instance) {
   instance.extend({
+    components:{
+      FeCascader,
+      FeInput,
+      FePrivateFormulateInputFile
+    },
     library: {
       'el-cascader': {
         classification: 'text',

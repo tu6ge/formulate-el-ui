@@ -13,6 +13,7 @@
 import {Input} from 'element-ui'
 
 export default {
+  name:'fe-input',
   props: {
     context: {
       type: Object,

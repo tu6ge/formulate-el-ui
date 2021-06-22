@@ -17,6 +17,7 @@
 <script>
 import {Cascader} from 'element-ui'
 export default {
+  name:'fe-cascader',
   props: {
     context: {
       type: Object,

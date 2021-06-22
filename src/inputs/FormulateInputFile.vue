@@ -67,7 +67,7 @@ import FormulateInputMixin from '@braid/vue-formulate/src/FormulateInputMixin.js
 import FormulateFiles from '@braid/vue-formulate/src/FormulateFiles.vue'
 
 export default {
-  name: 'FormulateInputFile2',
+  name: 'fe-private-formulate-input-file',
   components: {
     FormulateFiles
   },
