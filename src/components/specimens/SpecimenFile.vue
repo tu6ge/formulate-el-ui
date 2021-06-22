@@ -55,6 +55,7 @@
       <FormulateForm 
         v-model="formValues"
         @submit="sendData"
+        name="demo"
       >
         <FormulateInput
           label="What do you look like?"
@@ -63,6 +64,19 @@
           help="Select a picture to upload."
           multiple
         />
+        <FormulateInput
+          label="What do you look like?"
+          type="image"
+          name="avatar2"
+          help="Select a picture to upload."
+          ref="avatar2"
+          multiple
+        />
+        <FormulateInput
+          label="Click me"
+          type="button" 
+          @click="insertImg"
+        >动态初始化图片</FormulateInput>
         <FormulateInput type="submit" label="submit"></FormulateInput>
       </FormulateForm>
       <code v-text="formResult" />
@@ -74,11 +88,38 @@
 export default {
   data() {
     return {
-      formValues:{},
+      formValues:{
+        avatar2:[
+          // {
+          //   url:'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100',
+          //   name:'avatar1.png'
+          // }
+        ]
+      },
       formResult:{}
     }
   },
   methods: {
+    insertImg(){
+      this.formValues.avatar2 = [
+        {
+          url:'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100',
+          name:'avatar1.png'
+        }
+      ]
+      // this.formValues.avatar2 = this.$formulate.createUpload(
+      //   {
+      //     files: [
+      //       {
+      //         url:'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100',
+      //         name:'avatar1.png'
+      //       }
+      //     ]
+      //   },
+      //   this.$refs['avatar2'].context,
+      //   this.$formulate.options
+      // )
+    },
     sendData(value){
       this.formResult = value;
     },
