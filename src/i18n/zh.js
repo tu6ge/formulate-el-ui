@@ -226,6 +226,7 @@ export default function (instance) {
   instance.extend({
     locales: {
       [locale]: localizedValidationMessages
-    }
+    },
+    locale: locale,
   })
 }
