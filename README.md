@@ -1,4 +1,4 @@
-<p align="center"><img width="100" src="./public/logo.jpg" alt="VueFormulate"></p>
+<p align="center"><img width="100" src="./public/logo.png" alt="VueFormulate"></p>
 
 # formulate-el-ui
 
