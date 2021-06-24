@@ -34,4 +34,4 @@ Vue.use(VueFormulate, {
 
 ### 文档
 
-查看 [vueformulate 文档](https://vueformulate.com/).
+查看 [vueformulate 文档](https://vueformulatecom-braid.vercel.app/).
