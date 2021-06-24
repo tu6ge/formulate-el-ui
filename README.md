@@ -1,3 +1,5 @@
+<p align="center"><img width="100" src="./public/logo.jpg" alt="VueFormulate"></p>
+
 # formulate-el-ui
 
 <a href="https://www.npmjs.com/package/formulate-el-ui"><img alt="npm" src="https://img.shields.io/npm/v/formulate-el-ui"></a>
