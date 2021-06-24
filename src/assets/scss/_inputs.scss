@@ -101,15 +101,23 @@
     }
   }
 
-  &[data-classification='group'] > .formulate-input-wrapper{
-    align-items: flex-start;
-  }
-
-  &[data-classification='group'] > .formulate-input-wrapper > .formulate-input-label--before{
-    width: $formulate-label-width;
-  }
-
   &[data-classification='group'] {
+    > .formulate-input-wrapper{
+      align-items: flex-start;
+    }
+
+    &[data-type='checkbox'] > .formulate-input-wrapper{
+      align-items: center;
+    }
+
+    &[data-type='radio'] > .formulate-input-wrapper{
+      align-items: center;
+    }
+
+    > .formulate-input-wrapper > .formulate-input-label--before{
+      width: $formulate-label-width;
+    }
+    
     .formulate-input-grouping{
       .formulate-input-label--before{
         width: $formulate-label-width-min;
