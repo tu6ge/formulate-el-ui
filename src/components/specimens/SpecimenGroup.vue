@@ -134,6 +134,12 @@
         validation="idcard"
         help="请输入一个身份证号码"
       />
+      <FormulateInput
+        label="个性签名"
+        type="el-input"
+        el-type="textarea"
+        help="个性签名"
+      />
       <FormulateInput type="submit" label="提交"></FormulateInput>
     </div>
   </div>

@@ -11,6 +11,7 @@
     <SpecimenSlider />
     <SpecimenText />
     <SpecimenTextarea />
+    <SpecimenElement />
   </div>
 </template>
 
@@ -25,6 +26,7 @@ import SpecimenButton from './specimens/SpecimenButton'
 import SpecimenBox from './specimens/SpecimenBox'
 import SpecimenSlider from './specimens/SpecimenSlider'
 import SpecimenSelect from './specimens/SpecimenSelect'
+import SpecimenElement from './specimens/SpecimenElement' 
 import 'element-ui/lib/theme-chalk/index.css'
 
 export default {
@@ -37,7 +39,8 @@ export default {
     SpecimenGroup,
     SpecimenFile,
     SpecimenSlider,
-    SpecimenSelect
+    SpecimenSelect,
+    SpecimenElement,
   },
   data () {
     return {

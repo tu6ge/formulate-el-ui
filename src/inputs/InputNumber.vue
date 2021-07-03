@@ -3,15 +3,14 @@
     :class="context.classes.element"
     :data-type="context.type"
   >
-    <el-input 
+    <el-input-number
       v-model="context.model"
       v-bind="context.slotProps.component"
-      :type="type"
     />
   </div>
 </template>
 <script>
-import {Input} from 'element-ui'
+import {InputNumber} from 'element-ui'
 
 export default {
   name:'fe-input',
@@ -22,12 +21,7 @@ export default {
     }
   },
   components: {
-    [Input.name]: Input
-  },
-  computed: {
-    type(){
-      return this.context.slotProps.component.elType || 'text'
-    }
+    [InputNumber.name]: InputNumber
   }
 }
 </script>
