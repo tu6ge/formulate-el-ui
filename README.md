@@ -38,12 +38,16 @@ npm run serve //可以快速体验本项目的一些演示 demo
 
 ## 使用
 
+### 全局引入
+
 在你的 `main.js` 文件的适当位置加上如下代码：
 ```
-import 'formulate-el-ui/src/assets/scss/element-ui.scss';
-import CheckboxHelp from 'formulate-el-ui/src/extends/checkbox.js'
-import formulate_zh from 'formulate-el-ui/src/i18n/zh.js'
-import formulate_rules from 'formulate-el-ui/src/extends/rules.js'
+import 'formulate-el-ui/element-ui.min.css';
+import formulateElementUI from 'formulate-el-ui'
+
+Vue.use(VueFormulate, {
+  plugins: [formulateElementUI]
+})
 
 Vue.use(VueFormulate, {
   classes: {
@@ -56,6 +60,72 @@ Vue.use(VueFormulate, {
   ] 
 })
 ```
+
+### 只使用样式
+
+```
+import {
+  theme
+} from 'formulate-el-ui'
+import 'formulate-el-ui/element-ui.min.css';
+
+Vue.use(VueFormulate, {
+  plugins: [theme], // 配合上面引入的样式文件，使用 element-ui 的风格
+})
+```
+
+### 只修正 checkbox 组件的 help 展示位置
+
+```
+import {
+  CheckboxHelp,
+} from 'formulate-el-ui'
+
+Vue.use(VueFormulate, {
+  plugins: [CheckboxHelp], // CheckboxHelp 用于解决 checkbox 组件中 help 信息展示位置错误的问题
+})
+```
+
+### 增加中国手机号和身份证号码验证规则、
+
+包含的规则：
+- mobile ：手机号码格式验证
+- idcard ：18位身份证格式验证
+
+```
+import {
+  rules,
+} from 'formulate-el-ui'
+
+Vue.use(VueFormulate, {
+  plugins: [rules],
+})
+```
+
+### 只扩展 element-ui 常用的表单域组件
+
+```
+import {
+  inputs,
+} from 'formulate-el-ui'
+
+Vue.use(VueFormulate, {
+  plugins: [inputs],
+})
+```
+
+目前包含的组件
+
+| 组件 | FormulateInput type | 支持的 prop |
+|----|----|----|
+| Input | `el-input` | autosize, clearable, maxlength, minlength,rows, showPassword, showWordLimit, elType (值为`textarea` 时，是多行文本框) |
+| Cascader | `el-cascader` | "beforeFilter", "clearable", "collapseTags", "debounce", "disabled", "filterMethod", "options", "placeholder", "popperClass", "props", "separator", "showAllLevels", "size" |
+| ColorPicker 颜色选择器 | `el-color-picker` | 'colorFormat','predefine','showAlpha' |
+| InputNumber | `el-input-number` | 'min','max','step','stepStrictly','precision' |
+| Rate | `el-rate` | 'allowHalf','colors','disabledVoidColor','disabledVoidIconClass','highThreshold','iconClasses','max','lowThreshold','showScore','showText','texts','testColor','voidColor','voidIconClass' |
+| Switch | `el-switch` | 'activeText','inactiveText','activeColor','inactiveColor'
+| Slider | `el-slider` | 'formatTooltip','min','marks','max','scoreTemplate','showTooltip','step','showStops','showInput','showInputControls','range','vertical','height' |
+
 
 ## 已知问题
 
