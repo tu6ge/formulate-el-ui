@@ -1,27 +1,28 @@
 import Vue from 'vue'
-// import App from './App.vue'
 import VueFormulate from '@braid/vue-formulate'
 import FormulateSpecimens from './components/FormulateSpecimens.vue'
-import zh from './i18n/zh.js'
-import CheckboxHelp from './extends/checkbox.js'
-import rules from './extends/rules.js'
-import inputs from './inputs/'
+
+//import formulateElementUI from './index.js'
+import {
+  theme,
+  CheckboxHelp,
+  rules,
+  inputs,
+  zh
+} from '../dist/formulate-el-ui.umd.js'
+// } from './index.js'
 
 Vue.config.productionTip = false
 
-const ElThem = function (instance) {
-  instance.extend({
-    classes: {
-      outer: 'el-formulate-input'
-    }
-  })
-}
-
-
-
 Vue.use(VueFormulate, {
-  plugins: [zh, ElThem, CheckboxHelp, rules, inputs],
-  locale: 'zh'
+  // plugins: [formulateElementUI]
+  plugins: [
+    theme,
+    CheckboxHelp,
+    rules,
+    inputs,
+    zh
+  ]
 })
 
 new Vue({

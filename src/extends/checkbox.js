@@ -1,12 +1,14 @@
-export default function (instance) {
-  instance.extend({
-    library: {
-      checkbox: {
-        slotComponents: {
-          help: 'div',
-          suffix: 'FormulateHelp'
-        }
+export const options = {
+  library: {
+    checkbox: {
+      slotComponents: {
+        help: 'div',
+        suffix: 'FormulateHelp'
       }
     }
-  })
+  }
+}
+
+export default function (instance) {
+  instance.extend(options)
 }

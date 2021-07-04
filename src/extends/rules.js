@@ -24,21 +24,23 @@ const idcard = function ({ value }) {
   return true
 }
 
-export default function (instance) {
-  instance.extend({
-    rules: {
-      mobile,
-      idcard
-    },
-    locales: {
-      zh: {
-        mobile({value}) {
-          return `${value} 不是一个手机号`
-        },
-        idcard() {
-          return `身份证号码格式错误`
-        }
+export const options = {
+  rules: {
+    mobile,
+    idcard
+  },
+  locales: {
+    zh: {
+      mobile({value}) {
+        return `${value} 不是一个手机号`
+      },
+      idcard() {
+        return `身份证号码格式错误`
       }
     }
-  })
+  }
+}
+
+export default function (instance) {
+  instance.extend(options)
 }

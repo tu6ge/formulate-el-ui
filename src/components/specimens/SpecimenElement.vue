@@ -249,6 +249,7 @@
       <h3>默认</h3>
       <FormulateInput
         label="分数"
+        v-model="rateValue"
         type="el-rate"
       />
     </div>
@@ -257,6 +258,7 @@
       <FormulateInput
         label="分数"
         type="el-rate"
+        v-model="rateValue"
         :colors="rateColors"
       />
     </div>
@@ -265,6 +267,7 @@
       <FormulateInput
         label="分数"
         type="el-rate"
+        v-model="rateValue"
         show-text
       />
     </div>
@@ -273,6 +276,7 @@
       <FormulateInput
         label="分数"
         type="el-rate"
+        v-model="rateValue"
         show-score
       />
     </div>
@@ -334,6 +338,7 @@ export default {
           label: this.$createElement('strong', '50%')
         }
       },
+      rateValue: 0,
       rateColors: ['#99A9BF', '#F7BA2A', '#FF9900'],  // 等同于 { 2: '#99A9BF', 4: { value: '#F7BA2A', excluded: true }, 5: '#FF9900' }
       colorValue:'#409EFF',
       predefineColors:[

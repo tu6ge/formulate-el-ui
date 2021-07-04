@@ -218,15 +218,17 @@ const localizedValidationMessages = {
   }
 }
 
+export const options = {
+  locales: {
+    [locale]: localizedValidationMessages
+  },
+  locale: locale,
+}
+
 /**
  * This creates a vue-formulate plugin that can be imported and used on each
  * project.
  */
 export default function (instance) {
-  instance.extend({
-    locales: {
-      [locale]: localizedValidationMessages
-    },
-    locale: locale,
-  })
+  instance.extend(options)
 }
