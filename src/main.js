@@ -9,8 +9,8 @@ import {
   rules,
   inputs,
   zh
-} from '../dist/formulate-el-ui.umd.js'
-// } from './index.js'
+// } from '../dist/formulate-el-ui.umd.js'
+} from './index.js'
 
 Vue.config.productionTip = false
 

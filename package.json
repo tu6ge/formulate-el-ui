@@ -43,8 +43,6 @@
     "cssnano": "^5.0.6",
     "element-ui": "^2.15.2",
     "eslint": "^6.7.2",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-vue": "^6.2.2",
     "node-sass": "4",
     "postcss": "^8.3.5",
@@ -60,8 +58,7 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended",
-      "standard"
+      "eslint:recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
