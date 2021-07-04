@@ -48,17 +48,6 @@ import formulateElementUI from 'formulate-el-ui'
 Vue.use(VueFormulate, {
   plugins: [formulateElementUI]
 })
-
-Vue.use(VueFormulate, {
-  classes: {
-    outer: 'el-formulate-input'  // 配合上面引入的样式文件，使用 element-ui 的风格
-  },
-  plugins: [
-    CheckboxHelp,    // CheckboxHelp 用于解决 checkbox 组件中 help 信息展示位置错误的问题
-    formulate_zh,    // 中文翻译，验证错误的文字更符合中文习惯
-    formulate_rules, // 添加全局的手机号验证器和身份证号验证器
-  ] 
-})
 ```
 
 ### 只使用样式
