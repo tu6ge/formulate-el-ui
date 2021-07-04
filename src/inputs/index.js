@@ -1,13 +1,21 @@
 import FeCascader from './Cascader.vue'
+import FeColorPicker from './ColorPicker.vue'
 import FeInput from './Input.vue'
 import FeInputNumber from './InputNumber.vue'
+import FeRate from './Rate.vue'
+import FeSwitch from './Switch.vue'
+import FeSlider from './Slider.vue'
 
 export default function (instance) {
   instance.extend({
     components:{
       FeCascader,
+      FeColorPicker,
       FeInput,
       FeInputNumber,
+      FeRate,
+      FeSwitch,
+      FeSlider
     },
     library: {
       'el-cascader': {
@@ -31,6 +39,17 @@ export default function (instance) {
           ]
         }
       },
+      'el-color-picker': {
+        classification: 'text',
+        component: 'FeColorPicker',
+        slotProps: {
+          component: [
+            'colorFormat',
+            'predefine',
+            'showAlpha',
+          ]
+        }
+      },
       'el-input': {
         classification: 'text',
         component: 'FeInput',
@@ -38,9 +57,11 @@ export default function (instance) {
           component: [
             'elType',
 
+            'autosize',
             'clearable',
             'maxlength',
             'minlength',
+            'rows',
             'showPassword',
             'showWordLimit',
           ]
@@ -56,6 +77,61 @@ export default function (instance) {
             'step',
             'stepStrictly',
             'precision',
+          ]
+        }
+      },
+      'el-rate': {
+        classification: 'rate',
+        component: 'FeRate',
+        slotProps: {
+          component: [
+            'allowHalf',
+            'colors',
+            'disabledVoidColor',
+            'disabledVoidIconClass',
+            'highThreshold',
+            'iconClasses',
+            'max',
+            'lowThreshold',
+            'showScore',
+            'showText',
+            'texts',
+            'testColor',
+            'voidColor',
+            'voidIconClass'
+          ]
+        }
+      },
+      'el-switch': {
+        classification: 'switch',
+        component: 'FeSwitch',
+        slotProps: {
+          component: [
+            'activeText',
+            'inactiveText',
+            'activeColor',
+            'inactiveColor'
+          ]
+        }
+      },
+      'el-slider': {
+        classification: 'slider',
+        component: 'FeSlider',
+        slotProps: {
+          component: [
+            'formatTooltip',
+            'min',
+            'marks',
+            'max',
+            'scoreTemplate',
+            'showTooltip',
+            'step',
+            'showStops',
+            'showInput',
+            'showInputControls',
+            'range',
+            'vertical',
+            'height',
           ]
         }
       }

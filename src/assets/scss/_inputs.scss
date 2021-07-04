@@ -57,7 +57,9 @@
   &[data-classification='slider'],
   &[data-classification='textarea'],
   &[data-classification='file'],
-  &[data-classification='image'] {
+  &[data-classification='image'],
+  &[data-classification='switch'],
+  &[data-classification='rate'] {
     .formulate-input-wrapper{
       display:flex;
 
@@ -71,7 +73,9 @@
 
   &[data-classification='text'],
   &[data-classification='select'],
-  &[data-classification='slider'] {
+  &[data-classification='slider'],
+  &[data-classification='switch'],
+  &[data-classification='rate'] {
     .formulate-input-wrapper{
       align-items: center;
 

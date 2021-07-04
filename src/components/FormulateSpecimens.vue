@@ -170,4 +170,10 @@ h2 {
     margin: 0;
   }
 }
+
+.preview--el-slider{
+  .el-slider{
+    width:300px;
+  }
+}
 </style>
