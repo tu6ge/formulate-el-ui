@@ -132,7 +132,7 @@ Vue.use(VueFormulate, {
 | InputNumber | `el-input-number` | min,max,step,stepStrictly,precision |
 | Rate | `el-rate` | allowHalf,colors,disabledVoidColor,disabledVoidIconClass<br>,highThreshold,iconClasses,max,lowThreshold,showScore,showText,<br>texts,testColor,voidColor,voidIconClass |
 | Switch | `el-switch` | activeText,inactiveText,activeColor,inactiveColor
-| Slider | `el-slider` | formatTooltip,min,marks,max,scoreTemplate,<br>showTooltip,step,showStops,showInput,showInputControls,range,vertical,height |
+| Slider | `el-slider` | formatTooltip,min,marks,max,scoreTemplate,<br>showTooltip,step,showStops,showInput,showInputControls,<br>range,vertical,height |
 
 
 ## 已知问题
