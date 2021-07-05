@@ -126,13 +126,13 @@ Vue.use(VueFormulate, {
 
 | 组件 | FormulateInput type | 支持的 prop |
 |----|----|----|
-| Input | `el-input` | autosize, clearable, maxlength, minlength,rows, showPassword, showWordLimit, elType (值为`textarea` 时，是多行文本框) |
-| Cascader | `el-cascader` | "beforeFilter", "clearable", "collapseTags", "debounce", "disabled", "filterMethod", "options", "placeholder", "popperClass", "props", "separator", "showAllLevels", "size" |
-| ColorPicker 颜色选择器 | `el-color-picker` | 'colorFormat','predefine','showAlpha' |
-| InputNumber | `el-input-number` | 'min','max','step','stepStrictly','precision' |
-| Rate | `el-rate` | 'allowHalf','colors','disabledVoidColor','disabledVoidIconClass','highThreshold','iconClasses','max','lowThreshold','showScore','showText','texts','testColor','voidColor','voidIconClass' |
-| Switch | `el-switch` | 'activeText','inactiveText','activeColor','inactiveColor'
-| Slider | `el-slider` | 'formatTooltip','min','marks','max','scoreTemplate','showTooltip','step','showStops','showInput','showInputControls','range','vertical','height' |
+| Input | `el-input` | autosize, clearable, maxlength, minlength,rows, <br> showPassword, showWordLimit, elType (值为`textarea` 时，是多行文本框) |
+| Cascader | `el-cascader` | beforeFilter, clearable, collapseTags, debounce,<br> disabled, filterMethod, options, placeholder, popperClass,<br> props, separator, showAllLevels, size |
+| ColorPicker 颜色选择器 | `el-color-picker` | colorFormat,predefine,showAlpha |
+| InputNumber | `el-input-number` | min,max,step,stepStrictly,precision |
+| Rate | `el-rate` | allowHalf,colors,disabledVoidColor,disabledVoidIconClass<br>,highThreshold,iconClasses,max,lowThreshold,showScore,showText,<br>texts,testColor,voidColor,voidIconClass |
+| Switch | `el-switch` | activeText,inactiveText,activeColor,inactiveColor
+| Slider | `el-slider` | formatTooltip,min,marks,max,scoreTemplate,<br>showTooltip,step,showStops,showInput,showInputControls,range,vertical,height |
 
 
 ## 已知问题
