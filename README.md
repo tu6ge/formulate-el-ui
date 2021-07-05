@@ -63,6 +63,25 @@ Vue.use(VueFormulate, {
 })
 ```
 
+如果需要使用行内表单（所有的表单域在一行内展示），则可以在 `FormulateForm` 组件上加一个 `el-formulate__form-inline` 样式即可：
+
+```
+<FormulateForm
+  :form-class="['el-formulate__form-inline']"
+>
+  <FormulateInput
+    label="个性签名"
+    type="el-input"
+    value="你好，Element-UI"
+  />
+</FormulateForm>
+```
+
+> 注意：使用行内表单时，展示错误信息使用了 `position:absoulte`, 如果字段中的验证规则有多条错误信息，会导致展示错乱，所以，需要在验证
+> 中使用 [`bail` 规则](https://tu6ge.github.io/vueformulate.com/zh/guide/validation/#%E5%81%9C%E6%AD%A2%E9%AA%8C%E8%AF%81) ，
+> 这样错误信息就会只展示一条。
+
+
 ### 只修正 checkbox 组件的 help 展示位置
 
 ```

@@ -1,0 +1,43 @@
+<template>
+  <div class="specimens specimens--group">
+    <h2>行内表单</h2>
+    <div class="">
+      <FormulateForm
+        :form-class="['el-formulate__form-inline']"
+      >
+        <FormulateInput
+          label="个性签名"
+          type="el-input"
+          value="你好，Element-UI"
+        />
+        <FormulateInput
+          label="个性签名"
+          type="el-input"
+          value="你好，Element-UI"
+        />
+        <FormulateInput
+          label="密码"
+          type="el-input"
+          validation="bail|required|number|min:3,length"
+          error-behavior="live"
+        />
+        <FormulateInput
+          label="个性签名"
+          type="el-input"
+        />
+        <FormulateInput
+          label="个性签名"
+          type="el-input"
+        />
+        <FormulateInput
+          label="个性签名"
+          type="el-input"
+        />
+        <FormulateInput
+          label="个性签名"
+          type="el-input"
+        />
+      </FormulateForm>
+    </div>
+  </div>
+</template>

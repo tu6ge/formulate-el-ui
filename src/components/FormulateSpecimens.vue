@@ -12,6 +12,7 @@
     <SpecimenText />
     <SpecimenTextarea />
     <SpecimenElement />
+    <SpecimenInline />
   </div>
 </template>
 
@@ -26,7 +27,8 @@ import SpecimenButton from './specimens/SpecimenButton'
 import SpecimenBox from './specimens/SpecimenBox'
 import SpecimenSlider from './specimens/SpecimenSlider'
 import SpecimenSelect from './specimens/SpecimenSelect'
-import SpecimenElement from './specimens/SpecimenElement' 
+import SpecimenElement from './specimens/SpecimenElement'
+import SpecimenInline from './specimens/SpecimenInline'
 import 'element-ui/lib/theme-chalk/index.css'
 
 export default {
@@ -41,6 +43,7 @@ export default {
     SpecimenSlider,
     SpecimenSelect,
     SpecimenElement,
+    SpecimenInline,
   },
   data () {
     return {
