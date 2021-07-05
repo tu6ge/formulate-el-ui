@@ -42,7 +42,7 @@ npm run serve //可以快速体验本项目的一些演示 demo
 
 在你的 `main.js` 文件的适当位置加上如下代码：
 ```
-import 'formulate-el-ui/element-ui.min.css';
+import 'formulate-el-ui/dist/element-ui.min.css';
 import formulateElementUI from 'formulate-el-ui'
 
 Vue.use(VueFormulate, {
@@ -56,7 +56,7 @@ Vue.use(VueFormulate, {
 import {
   theme
 } from 'formulate-el-ui'
-import 'formulate-el-ui/element-ui.min.css';
+import 'formulate-el-ui/dist/element-ui.min.css';
 
 Vue.use(VueFormulate, {
   plugins: [theme], // 配合上面引入的样式文件，使用 element-ui 的风格
