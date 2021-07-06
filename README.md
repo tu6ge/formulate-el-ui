@@ -144,3 +144,6 @@ Vue.use(VueFormulate, {
 
 查看 [vueformulate 文档](https://vueformulatecom-braid.vercel.app/)，另外，还有 [中文文档](https://tu6ge.github.io/vueformulate.com/zh/)
 
+# 星星
+
+如果你感觉好用，就给项目打个星星吧 ^_^
