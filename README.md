@@ -15,7 +15,7 @@
 
 ## 在安装之前，需要安装如下 npm 包
 
-- @braid/vue-formulate
+- @braid/vue-formulate [中文文档](https://tu6ge.github.io/vueformulate.com/zh/)
 - element-ui
 
 ## 安装
