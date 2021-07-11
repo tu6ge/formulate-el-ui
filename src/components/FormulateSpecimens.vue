@@ -12,7 +12,8 @@
     <SpecimenText />
     <SpecimenTextarea />
     <SpecimenElement />
-    <SpecimenInline />
+    <SpecimenForm />
+    <SpecimenFormInline />
   </div>
 </template>
 
@@ -28,7 +29,8 @@ import SpecimenBox from './specimens/SpecimenBox'
 import SpecimenSlider from './specimens/SpecimenSlider'
 import SpecimenSelect from './specimens/SpecimenSelect'
 import SpecimenElement from './specimens/SpecimenElement'
-import SpecimenInline from './specimens/SpecimenInline'
+import SpecimenForm from './specimens/SpecimenForm'
+import SpecimenFormInline from './specimens/SpecimenFormInline.vue'
 import 'element-ui/lib/theme-chalk/index.css'
 
 export default {
@@ -43,7 +45,8 @@ export default {
     SpecimenSlider,
     SpecimenSelect,
     SpecimenElement,
-    SpecimenInline,
+    SpecimenForm,
+    SpecimenFormInline
   },
   data () {
     return {

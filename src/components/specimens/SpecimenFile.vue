@@ -1,70 +1,70 @@
 <template>
   <div class="specimens specimens--text">
-    <h2>File classification</h2>
+    <h2>文件体系</h2>
     <div class="specimen">
-      <h3>Single File</h3>
+      <h3>单一文件</h3>
       <FormulateInput
-        label="Upload a file"
+        label="上传一个文件"
         type="file"
         :outer-class="['file-input-1']"
-        help="Select any file to upload"
+        help="选择任意文件上传"
         :uploader="uploadToS3"
         upload-url="https://cq2cm6d0h6.execute-api.us-east-1.amazonaws.com/signature"
       />
     </div>
     <div class="specimen">
-      <h3>Single File</h3>
+      <h3>单一文件（只读）</h3>
       <FormulateInput
         disabled
-        label="Upload a file"
+        label="上传一个文件"
         type="file"
         :outer-class="['file-input-1']"
-        help="Select any file to upload"
+        help="选择任意文件上传"
         :uploader="uploadToS3"
         upload-url="https://cq2cm6d0h6.execute-api.us-east-1.amazonaws.com/signature"
       />
     </div>
     <div class="specimen">
-      <h3>Multiple Files</h3>
+      <h3>多文件</h3>
       <FormulateInput
         :multiple="true"
-        label="Upload a file"
+        label="上传文件"
         name="file"
         type="file"
         :outer-class="['file-input-2']"
         :value="[{ url: 'apple.pdf' }]"
-        help="Select any file to upload"
+        help="选择任意 pdf 文件上传"
         validation="mime:application/pdf"
       />
     </div>
     <div class="specimen">
-      <h3>Multiple Files</h3>
+      <h3>多文件（只读）</h3>
       <FormulateInput
         disabled
         :multiple="true"
-        label="Upload a file"
+        label="上传文件"
         name="file"
         type="file"
         :outer-class="['file-input-2']"
-        help="Select any file to upload"
+        help="选择任意 pdf 文件上传"
         validation="mime:application/pdf"
       />
     </div>
     <div class="specimen">
-      <h3>Image</h3>
+      <h3>图片</h3>
       <FormulateForm 
         v-model="formValues"
         @submit="sendData"
         name="demo"
       >
         <FormulateInput
-          label="What do you look like?"
+          label="你长相怎样？"
           type="image"
           name="avatar"
-          help="Select a picture to upload."
+          help="选择一个图片上传"
           multiple
         />
-        <FormulateInput
+        <!-- <FormulateInput
           label="What do you look like?"
           type="image"
           name="avatar2"
@@ -77,9 +77,9 @@
           type="button" 
           @click="insertImg"
         >动态初始化图片</FormulateInput>
-        <FormulateInput type="submit" label="submit"></FormulateInput>
+        <FormulateInput type="submit" label="submit"></FormulateInput> -->
       </FormulateForm>
-      <code v-text="formResult" />
+      <!-- <code v-text="formResult" /> -->
     </div>
   </div>
 </template>
@@ -107,18 +107,6 @@ export default {
           name:'avatar1.png'
         }
       ]
-      // this.formValues.avatar2 = this.$formulate.createUpload(
-      //   {
-      //     files: [
-      //       {
-      //         url:'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100',
-      //         name:'avatar1.png'
-      //       }
-      //     ]
-      //   },
-      //   this.$refs['avatar2'].context,
-      //   this.$formulate.options
-      // )
     },
     sendData(value){
       this.formResult = value;

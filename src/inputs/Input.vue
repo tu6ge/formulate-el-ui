@@ -7,6 +7,7 @@
       v-model="context.model"
       v-bind="context.slotProps.component"
       :type="type"
+      @blur="context.blurHandler"
     />
   </div>
 </template>

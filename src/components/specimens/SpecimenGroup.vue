@@ -1,29 +1,30 @@
 <template>
   <div class="specimens specimens--group">
-    <h2>Group classification</h2>
+    <h2>分组体系</h2>
     <div class="specimen">
-      <h3>Non-repeatable group</h3>
+      <h3>一个不可重复的分组</h3>
       <FormulateInput
         type="group"
       >
         <FormulateInput
-          label="City"
+          label="城市"
           type="text"
           name="city"
         />
         <FormulateInput
-          label="State"
+          label="区/县"
           type="select"
           :options="{NE: 'Nebraska', MO: 'Missouri', VA: 'Virginia'}"
-          placeholder="Select a state"
+          placeholder="请选择一个区县"
         />
       </FormulateInput>
     </div>
     <div class="specimen">
-      <h3>Simple repeatable group</h3>
+      <h3>简单的可重复分组</h3>
       <FormulateInput
         type="group"
         name="foobar"
+        add-label="尝试着添加一条"
         :repeatable="true"
       >
         <div class="wrap">
@@ -35,112 +36,35 @@
       </FormulateInput>
     </div>
     <div class="specimen">
-      <h3>Repeatable group</h3>
+      <h3>可重复分组</h3>
       <FormulateInput
         name="users"
-        label="Invite some new users"
-        type="group"
-        placeholder="users"
-        help="Fields can be grouped"
-        :repeatable="true"
-        minimum="3"
-        :value="[{ name: 'Justin' }, { name: 'Bob' }]"
-        add-label="Add new user"
-        remove-label="Remove user"
-      >
-        <FormulateInput
-          label="First and last name"
-          name="name"
-          type="text"
-          placeholder="User’s name"
-          validation="required"
-        />
-        <FormulateInput
-          name="email"
-          label="Email address"
-          type="email"
-          placeholder="User’s email"
-          validation="required|email"
-        />
-      </FormulateInput>
-    </div>
-    <div class="specimen2">
-      <h3>Repeatable group</h3>
-      <FormulateInput
-        name="users"
-        label="Invite some new users"
+        label="邀请一些新用户"
         type="group"
         placeholder="users"
         :repeatable="true"
         minimum="3"
         :value="[{ name: 'Justin' }, { name: 'Bob' }]"
         add-label="添加新用户"
-        remove-label="Remove user"
+        remove-label="删除用户"
       >
         <FormulateInput
-          label="用户昵称"
+          label="姓名"
           name="name"
           type="text"
-          placeholder="User’s name"
+          placeholder="用户的姓名"
           validation="required"
+          validation-name="姓名"
         />
         <FormulateInput
           name="email"
           label="邮箱"
           type="email"
-          placeholder="User’s email"
+          placeholder="用户邮箱"
           validation="required|email"
-        />
-        <FormulateInput
-          label="总统"
-          type="radio"
-          :options="{trump: 'Trump', obama: 'Obama'}"
-          validation="in:trump"
+          validation-name="邮箱"
         />
       </FormulateInput>
-      <FormulateInput
-        label="总统"
-        type="checkbox"
-        :options="{trump: 'Trump', obama: 'Obama', bush: 'Bush', clinton: 'Clinton'}"
-        validation="min:1"
-      />
-      <FormulateInput
-        label="总统"
-        type="radio"
-        :options="{trump: 'Trump', obama: 'Obama', bush: 'Bush', clinton: 'Clinton'}"
-        validation="in:trump"
-      />
-      <FormulateInput
-        label="姓名"
-        type="text"
-        validation="required"
-      />
-      <FormulateInput
-        label="选择花"
-        type="select"
-        :options="{vanilla: 'Vanilla', chocolate: 'Chocolate', cherry: 'Cherry', lemon: 'Lemon'}"
-        validation="in:vanilla"
-        help="You can choose more than one selection by holding command (mac) or option (windows)."
-      />
-      <FormulateInput
-        label="联系电话"
-        type="text"
-        validation="mobile"
-        help="请输入一个手机号码"
-      />
-      <FormulateInput
-        label="身份证"
-        type="text"
-        validation="idcard"
-        help="请输入一个身份证号码"
-      />
-      <FormulateInput
-        label="个性签名"
-        type="el-input"
-        el-type="textarea"
-        help="个性签名"
-      />
-      <FormulateInput type="submit" label="提交"></FormulateInput>
     </div>
   </div>
 </template>

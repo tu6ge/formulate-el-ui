@@ -1,7 +1,7 @@
 <template>
   <div class="specimens specimens--group">
-    <h2>element UI 演示</h2>
-    <h2>Input 输入框</h2>
+    <h2>element UI 系列表单域演示</h2>
+    <h2>el-input 输入框</h2>
     <div class="specimen">
       <h3>普通</h3>
       <FormulateInput
@@ -69,7 +69,7 @@
         help="个性签名"
       />
     </div>
-    <h2>计数器</h2>
+    <h2>el-input-number 计数器</h2>
     <div class="specimen">
       <h3>普通</h3>
       <FormulateInput
@@ -105,7 +105,7 @@
         :max="10"
       />
     </div>
-    <h2>switch 开关</h2>
+    <h2>el-switch 开关</h2>
     <div class="specimen">
       <h3>普通</h3>
       <FormulateInput
@@ -140,7 +140,7 @@
       <h3>扩展类型</h3>
       <span>由于 formulate 不支持布尔类型，现在选中的时候，返回 1，反之返回 0，所以不支持扩展类型，开发者可以在表单提交后的事件中再做处理</span>
     </div>
-    <h2>Slider 滑块</h2>
+    <h2>el-slider 滑块</h2>
     <div class="specimen preview--el-slider">
       <h3>默认</h3>
       <FormulateInput
@@ -244,7 +244,7 @@
         :marks="sliderMarks"
       />
     </div>
-    <h2>Rate 评分</h2>
+    <h2>el-rate 评分</h2>
     <div class="specimen">
       <h3>默认</h3>
       <FormulateInput
@@ -280,7 +280,7 @@
         show-score
       />
     </div>
-    <h2>ColorPicker 颜色选择器</h2>
+    <h2>el-color-picker 颜色选择器</h2>
     <div class="specimen ">
       <h3>有默认值</h3>
       <FormulateInput

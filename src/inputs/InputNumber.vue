@@ -6,6 +6,7 @@
     <el-input-number
       v-model="context.model"
       v-bind="context.slotProps.component"
+      @blur="context.blurHandler"
     />
   </div>
 </template>

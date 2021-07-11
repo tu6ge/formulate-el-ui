@@ -1,154 +1,144 @@
 <template>
   <div class="specimens specimens--text">
-    <h2>Text classification</h2>
+    <h2>Text 体系</h2>
     <div class="specimen">
-      <h3>Color</h3>
+      <h3>颜色</h3>
       <FormulateInput
-        label="Pick a color?"
+        label="选择一个颜色?"
         type="color"
-        help="Choose your favorite."
+        help="挑选你喜欢的"
         validation="required|between:0,10"
       />
     </div>
     <div class="specimen">
-      <h3>Date</h3>
+      <h3>日期</h3>
       <FormulateInput
-        label="Select a day."
+        label="选择一天"
         type="date"
-        help="Choose your birthday."
+        help="挑选你的生日"
       />
     </div>
     <div class="specimen">
-      <h3>Date 2021-6-18 之前</h3>
+      <h3>日期 2021-6-18 之前</h3>
       <FormulateInput
-        label="Select a day."
+        label="选择一天"
         type="date"
-        help="Choose your birthday."
+        help="挑选你的生日"
         validation="before:2021-6-18"
       />
     </div>
     <div class="specimen">
       <h3>Datetime-local</h3>
       <FormulateInput
-        label="Select a day and time."
+        label="选择一天和时间"
         type="datetime-local"
-        help="When is the meeting?"
+        help="什么时候聚会呢？"
       />
     </div>
     <div class="specimen">
-      <h3>Email</h3>
+      <h3>邮箱</h3>
       <FormulateInput
-        label="What is your email?"
+        label="你的邮箱是？"
         type="email"
         placeholder="placeholder@example.com"
-        help="What is your email address?"
+        help="请留下你的邮箱"
       />
     </div>
     <div class="specimen">
-      <h3>Month</h3>
+      <h3>月份</h3>
       <FormulateInput
-        label="Favorite month"
+        label="感兴趣的月份"
         type="month"
-        help="When is Christmas?"
+        help="是圣诞节吗？"
       />
     </div>
     <div class="specimen">
-      <h3>Number</h3>
+      <h3>数字</h3>
       <FormulateInput
-        label="How old are you?"
+        label="你现在多大了？"
         type="number"
         placeholder="25"
-        help="Select your age"
+        help="选择你的年龄"
       />
     </div>
     <div class="specimen">
-      <h3>Password</h3>
+      <h3>密码</h3>
       <FormulateInput
-        label="Enter a password."
+        label="输入一个密码"
         type="password"
-        help="Choose something long and tricky."
+        help="请不要输入123456"
       />
     </div>
     <div class="specimen">
-      <h3>Search</h3>
+      <h3>搜索</h3>
       <FormulateInput
-        label="But I still haven't found."
+        label="但是我还是没找到。"
         type="search"
-        placeholder="What im looking for..."
-        help="I have climbed the highest mountains."
+        placeholder="我在找什么..."
+        help="我爬过最高的山峰。"
       />
     </div>
     <div class="specimen">
-      <h3>Tel</h3>
+      <h3>电话</h3>
       <FormulateInput
-        label="Oh you like Mike & Ikes?"
+        label="哦，你喜欢迈克和艾克斯吗？"
         type="tel"
-        placeholder="Can I have you number..."
-        help="Can I have it?"
+        placeholder="我可以给你号码吗..."
+        help="我可以拥有吗？"
       />
     </div>
     <div class="specimen">
-      <h3>Time</h3>
+      <h3>时间</h3>
       <FormulateInput
-        label="What time is dinner?"
+        label="什么时间吃晚饭"
         type="time"
-        placeholder="Pick a time"
-        help="When will you eat your food?"
+        placeholder="选择一个时间"
+        help="你什么时候把食物塞进自己的嘴里？"
       />
     </div>
     <div class="specimen">
-      <h3>Text</h3>
+      <h3>文本</h3>
       <FormulateInput
-        label="Username"
+        label="用户名"
         type="text"
-        placeholder="Username"
-        help="Select a username"
+        placeholder="用户名"
+        help="选择一个用户名"
       />
     </div>
     <div class="specimen">
-      <h3>Url</h3>
+      <h3>链接</h3>
       <FormulateInput
-        label="Personal website"
+        label="个人网站"
         type="url"
         placeholder="https://"
-        help="What is the url for your website?"
+        help="你网站的网址是多少？"
       />
     </div>
     <div class="specimen">
-      <h3>Week</h3>
+      <h3>星期</h3>
       <FormulateInput
-        label="I don’t know who would use this field."
+        label="我不知道谁会使用这个字段"
         type="week"
-        placeholder="Pick a week"
-        help="What week is it?"
+        placeholder="选择一个周"
+        help="哪个周？"
       />
     </div>
     <div class="specimen">
-      <h3>label width</h3>
+      <h3>element-ui 举例</h3>
       <FormulateInput
-        label="I don’t know who would use this field."
-        type="week"
-        placeholder="Pick a week"
-        help="What week is it?"
-        label-width="100px"
-      />
-    </div>
-    <div class="specimen">
-      <h3>el input</h3>
-      <FormulateInput
-        label="I don’t know who would use this field."
+        label="用户名"
         type="el-input"
-        value="bar"
+        value="张三"
         clearable
-        help="What week is it?"
+        help="你想起名叫张三吗"
       />
       <FormulateInput
-        label="I don’t know who would use this field."
+        label="你喜欢的开源作者是谁"
         type="el-input"
-        value="bar"
+        value="尤雨溪"
         maxlength="10"
         show-word-limit
-        help="What week is it?"
+        help="只能写一个"
       />
     </div>
   </div>
