@@ -1,6 +1,3 @@
-export default {
-  publicPath: process.env.NODE_ENV === 'production'
-  ? '/formulate-el-ui/'
-  : '/'
-
+module.exports = {
+  publicPath: process.env.VUE_APP_OUTPATH
 }

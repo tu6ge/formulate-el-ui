@@ -25,7 +25,7 @@
     "build": "npm run build:core && npm run build:css",
     "build:core": "vue-cli-service build --target lib --name formulate-el-ui src/index.js",
     "build:css": "node-sass src/assets/scss/element-ui.scss dist/element-ui.css && postcss --use autoprefixer -b '> 2%' < dist/element-ui.css | postcss --no-map --use cssnano > dist/element-ui.min.css",
-    "build:preview": "NODE_ENV=production && vue-cli-service build --dest=preview",
+    "build:preview": "vue-cli-service build --dest=preview --mode preview",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
