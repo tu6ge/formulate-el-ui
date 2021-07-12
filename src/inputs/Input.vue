@@ -8,6 +8,7 @@
       v-bind="context.slotProps.component"
       :type="type"
       @blur="context.blurHandler"
+      v-on="$listeners"
     />
   </div>
 </template>
