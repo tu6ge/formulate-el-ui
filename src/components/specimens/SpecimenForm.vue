@@ -47,7 +47,14 @@
           label="擅长的语言"
           type="checkbox"
           :options="['javascript','css','vue',{value:'jquery','label':'jquery',disabled: true}]"
-          validation="max:2"
+          validation="required|max:2"
+        />
+        <FormulateInput
+          label="擅长的语言"
+          type="checkbox"
+          :requiredTip="false"
+          :options="['javascript','css','vue',{value:'jquery','label':'jquery',disabled: true}]"
+          validation="required|max:2"
         />
         <FormulateInput
           label="用户头像"

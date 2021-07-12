@@ -16,6 +16,12 @@
       margin-top: -.25em;
       margin-bottom: .75em;
     }
+
+    &--required::before {
+      content: "*";
+      color: $formulate-error;
+      margin-right: 4px;
+    }
   }
 
   .formulate-input-element {

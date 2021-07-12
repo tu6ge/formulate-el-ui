@@ -5,6 +5,7 @@ import FeInputNumber from './InputNumber.vue'
 import FeRate from './Rate.vue'
 import FeSwitch from './Switch.vue'
 import FeSlider from './Slider.vue'
+import FeLabel from '../slots/FeLabel.vue'
 
 export const options = {
   components:{
@@ -12,6 +13,7 @@ export const options = {
     FeColorPicker,
     FeInput,
     FeInputNumber,
+    FeLabel,
     FeRate,
     FeSwitch,
     FeSlider
@@ -134,6 +136,12 @@ export const options = {
         ]
       }
     }
+  },
+  slotComponents: {
+    label: 'FeLabel'
+  },
+  slotProps: {
+    label: ['requiredTip']
   }
 }
 

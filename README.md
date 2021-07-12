@@ -7,10 +7,6 @@
 
 本项目为 `vueformulate` 项目加上了 `element-ui` 皮肤，可以让你在 `element-ui` 项目中使用 `vueformulate` 时保持风格统一
 
-## 效果展示
-
-[点击预览](https://tu6ge.github.io/formulate-el-ui/) 
-
 > 关于 element-ui 中的 `el-form` 和 `vueformulate` 包的功能比较，我写了一篇 [文章](https://learnku.com/vuejs/t/58162) ,供大家参考借鉴
 
 ## 语义化版本
@@ -30,15 +26,7 @@ yarn add formulate-el-ui
 
 ## 快速体验
 
-```
-git clone git@github.com:tu6ge/formulate-el-ui.git
-
-cd formulate-el-ui
-
-yarn install // or npm i
-
-npm run serve //可以快速体验本项目的一些演示 demo
-```
+[点击预览](https://tu6ge.github.io/formulate-el-ui/) 
 
 ## 使用
 
@@ -138,6 +126,14 @@ Vue.use(VueFormulate, {
 | Switch | `el-switch` | activeText,inactiveText,activeColor,inactiveColor
 | Slider | `el-slider` | formatTooltip,min,marks,max,scoreTemplate,<br>showTooltip,step,showStops,showInput,showInputControls,<br>range,vertical,height |
 
+### 必填字段 +v0.2.5
+
+element-ui 的 `el-form-item` 组件，当加上了 `required` prop 后，会显示一个红色 `*` 提示用户该字段必填，现在本项目也已支持，只要是
+`FormulateInput` 的验证规则中包含 `required` ,则会默认加上这个红色 `*` ，如果希望强制不显示，则可以在 `FormulateInput` 上设置 `requiredTip` prop 为 `false`,即可：
+
+```
+<FormulateInput :required-tip="false" />
+```
 
 ## 已知问题
 
