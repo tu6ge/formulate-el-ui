@@ -15,11 +15,13 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
-      - name: 'Install Yarn'
-        run: 'yarn install'
+      - uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: install
 
-      - name: 'Build Npm'
-        run: 'npm run build'
+      - uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: build
 
       - name: 'Publish to the npm registry'
         uses: primer/publish@3.0.0
