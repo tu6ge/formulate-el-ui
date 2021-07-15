@@ -2,7 +2,8 @@ name: Public Npm
 
 on:
   push:
-    branches: [ master ]
+    tags:
+      - *
 
 jobs:
   publish:
