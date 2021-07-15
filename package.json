@@ -1,6 +1,6 @@
 {
   "name": "formulate-el-ui",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "vue formulate 的一个用于兼容 element-ui 的插件",
   "keywords": [
     "element-ui",

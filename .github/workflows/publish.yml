@@ -15,6 +15,12 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
+      - name: 'Install Yarn'
+        run: 'yarn install'
+
+      - name: 'Build Npm'
+        run: 'npm run build'
+
       - name: 'Publish to the npm registry'
         uses: primer/publish@3.0.0
         env:
