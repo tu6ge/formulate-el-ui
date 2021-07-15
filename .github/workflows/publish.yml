@@ -10,6 +10,8 @@ jobs:
 
     name: 'publish npm'
 
+    environment: npm
+
     steps:
       - uses: actions/checkout@master
 
