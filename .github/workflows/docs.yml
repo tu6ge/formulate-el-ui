@@ -1,0 +1,31 @@
+name: Docs Deploy
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  docs_deploy:
+    runs-on: ubuntu-latest
+
+    name: 'Docs Deploy'
+
+    steps:
+      - uses: actions/checkout@master
+
+      - uses: borales/actions-yarn@v2.3.0
+        name: 'Install dependencies'
+        with:
+          cmd: install
+
+      - uses: borales/actions-yarn@v2.3.0
+        name: 'build'
+        with:
+          cmd: build:preview
+
+      - name: 'Deploy'
+        uses: JamesIves/github-pages-deploy-action@3.5.9
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: preview
