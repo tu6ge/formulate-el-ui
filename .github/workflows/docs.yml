@@ -13,19 +13,13 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
-      - uses: borales/actions-yarn@v2.3.0
-        name: 'Install dependencies'
-        with:
-          cmd: install
-
-      - uses: borales/actions-yarn@v2.3.0
-        name: 'build'
-        with:
-          cmd: build:preview
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          npm install
+          npm run build:preview
 
       - name: 'Deploy'
-        uses: JamesIves/github-pages-deploy-action@3.5.9
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: preview
+          branch: gh-pages
+          folder: preview
