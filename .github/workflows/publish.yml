@@ -15,13 +15,10 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
-      - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: install
-
-      - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: build
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          npm install
+          npm run build
 
       - name: 'Publish to the npm registry'
         uses: primer/publish@3.0.0
