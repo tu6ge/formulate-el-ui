@@ -3,6 +3,10 @@ name: Docs Deploy
 on:
   push:
     branches: [ master ]
+    paths:
+      - "src/components/*"
+      - "src/main.js"
+      - "package.json"
 
 jobs:
   docs_deploy:
