@@ -1,6 +1,6 @@
 {
   "name": "formulate-el-ui",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "vue formulate 的一个用于兼容 element-ui 的插件",
   "keywords": [
     "element-ui",
@@ -28,9 +28,7 @@
     "build:preview": "vue-cli-service build --dest=preview --mode preview",
     "lint": "vue-cli-service lint"
   },
-  "dependencies": {
-    "core-js": "^3.6.5"
-  },
+  "dependencies": {},
   "peerDependencies": {
     "element-ui": "^2.15",
     "vue": "^2.6"
@@ -41,6 +39,7 @@
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
+    "core-js": "^3.6.5",
     "cssnano": "^5.0.6",
     "element-ui": "^2.15.2",
     "eslint": "^6.7.2",
