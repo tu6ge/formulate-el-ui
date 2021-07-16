@@ -26,7 +26,10 @@
     "build:core": "vue-cli-service build --target lib --name formulate-el-ui src/index.js",
     "build:css": "node-sass src/assets/scss/element-ui.scss dist/element-ui.css && postcss --use autoprefixer -b '> 2%' < dist/element-ui.css | postcss --no-map --use cssnano > dist/element-ui.min.css",
     "build:preview": "vue-cli-service build --dest=preview --mode preview",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "test": "cross-env NODE_ENV=test jest --config test/jest.conf.js --coverage",
+    "test:watch": "NODE_ENV=test jest --config test/jest.conf.js --watch",
+    "test:coverage": "NODE_ENV=test jest --config test/jest.conf.js --coverage"
   },
   "dependencies": {},
   "peerDependencies": {
@@ -39,15 +42,19 @@
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.0.6",
     "core-js": "^3.6.5",
     "cssnano": "^5.0.6",
     "element-ui": "^2.15.2",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "jest": "^27.0.6",
+    "jest-vue-preprocessor": "^1.7.1",
     "node-sass": "4",
     "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1",
     "sass-loader": "9",
+    "typescript": "^4.3.5",
     "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.11"
   },
