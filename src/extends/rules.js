@@ -32,7 +32,7 @@ export const options = {
   locales: {
     zh: {
       mobile({value}) {
-        return `${value} 不是一个手机号`
+        return `${value} 不是一个正确的手机号`
       },
       idcard() {
         return `身份证号码格式错误`
