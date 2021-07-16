@@ -1,62 +1,46 @@
 {
   "name": "formulate-el-ui",
   "version": "0.2.11",
-  "description": "vue formulate 的一个用于兼容 element-ui 的插件",
-  "keywords": [
-    "element-ui",
-    "vue",
-    "vue-formulate",
-    "validation",
-    "plugin"
-  ],
-  "author": "tu6ge <772364230@qq.com>",
   "private": false,
-  "license": "MIT",
-  "main": "dist/formulate-el-ui.umd.min.js",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/tu6ge/formulate-el-ui.git"
-  },
-  "bugs": {
-    "url": "https://github.com/tu6ge/formulate-el-ui/issues"
-  },
+  "description": "vue formulate 的一个用于兼容 element-ui 的插件",
+  "author": "tu6ge <772364230@qq.com>",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "npm run build:core && npm run build:css",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
     "build:core": "vue-cli-service build --target lib --name formulate-el-ui src/index.js",
     "build:css": "node-sass src/assets/scss/element-ui.scss dist/element-ui.css && postcss --use autoprefixer -b '> 2%' < dist/element-ui.css | postcss --no-map --use cssnano > dist/element-ui.min.css",
     "build:preview": "vue-cli-service build --dest=preview --mode preview",
-    "lint": "vue-cli-service lint",
-    "test": "cross-env NODE_ENV=test jest --config test/jest.conf.js --coverage",
-    "test:watch": "NODE_ENV=test jest --config test/jest.conf.js --watch",
-    "test:coverage": "NODE_ENV=test jest --config test/jest.conf.js --coverage"
+    "test": "jest --config test/jest.conf.js --coverage",
+    "test:coverage": "NODE_ENV=test jest --config test/jest.conf.js --coverage",
+    "test:watch": "NODE_ENV=test jest --config test/jest.conf.js --watch"
   },
+  "main": "dist/formulate-el-ui.umd.min.js",
   "dependencies": {},
-  "peerDependencies": {
-    "element-ui": "^2.15",
-    "vue": "^2.6"
-  },
   "devDependencies": {
     "@braid/vue-formulate": "^2.5.2",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-unit-jest": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
+    "@vue/test-utils": "^1.0.3",
     "babel-eslint": "^10.1.0",
-    "babel-jest": "^27.0.6",
     "core-js": "^3.6.5",
     "cssnano": "^5.0.6",
     "element-ui": "^2.15.2",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "jest": "^27.0.6",
-    "jest-vue-preprocessor": "^1.7.1",
     "node-sass": "4",
     "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1",
     "sass-loader": "9",
-    "typescript": "^4.3.5",
     "vue": "^2.6.11",
     "vue-template-compiler": "^2.6.11"
+  },
+  "peerDependencies": {
+    "element-ui": "^2.15",
+    "vue": "^2.6"
   },
   "eslintConfig": {
     "root": true,
@@ -70,11 +54,37 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {},
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/tu6ge/formulate-el-ui/issues"
+  },
+  "keywords": [
+    "element-ui",
+    "vue",
+    "vue-formulate",
+    "validation",
+    "plugin"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tu6ge/formulate-el-ui.git"
+  }
 }
