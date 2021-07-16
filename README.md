@@ -68,6 +68,7 @@ Vue.use(VueFormulate, {
   />
 </FormulateForm>
 ```
+> 要了解更多，请访问 [`form-class` 的文档](https://tu6ge.github.io/vueformulate.com/zh/guide/theming/customizing-classes/)
 
 > 注意：使用行内表单时，展示错误信息使用了 `position:absoulte`, 如果字段中的验证规则有多条错误信息，会导致展示错乱，所以，需要在验证
 > 中使用 [`bail` 规则](https://tu6ge.github.io/vueformulate.com/zh/guide/validation/#%E5%81%9C%E6%AD%A2%E9%AA%8C%E8%AF%81) ，
