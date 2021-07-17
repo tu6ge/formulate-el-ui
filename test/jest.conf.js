@@ -19,6 +19,10 @@ module.exports = {
   },
   collectCoverageFrom: [
     "src/*.{js,vue}",
+    "src/inputs/*.{js,vue}",
+    "src/i18n/*.{js,vue}",
+    "src/slots/*.{js,vue}",
+    "src/extends/*.{js,vue}",
   ],
   testMatch: ["<rootDir>/test/unit/*.test.js"]
   // verbose: true

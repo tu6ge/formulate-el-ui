@@ -53,6 +53,20 @@ describe('FeLabel', () => {
     expect(label.classes()).toEqual(['formulate-input-label', 'formulate-input-label--before', 'formulate-input-label--required'])
   })
 
+  it('test label class when it have requried rule', () => {
+    const wrapper = mount(Formulate.options.components.FormulateInput, {
+      localVue,
+      propsData: {
+        type: 'text',
+        label:'姓名',
+        validation: ['required'],
+        labelClass: ['demo']
+      }
+    })
+    const label = wrapper.find('.formulate-input-label');
+    expect(label.classes()).toEqual(['formulate-input-label', 'formulate-input-label--before', 'demo', 'formulate-input-label--required'])
+  })
+
   it('test label class when it have requried rule , and force hidden', () => {
     const wrapper = mount(Formulate.options.components.FormulateInput, {
       localVue,
