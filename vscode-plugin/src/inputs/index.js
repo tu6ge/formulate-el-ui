@@ -1,22 +1,7 @@
-import FeCascader from './Cascader.vue'
-import FeColorPicker from './ColorPicker.vue'
-import FeInput from './Input.vue'
-import FeInputNumber from './InputNumber.vue'
-import FeRate from './Rate.vue'
-import FeSwitch from './Switch.vue'
-import FeSlider from './Slider.vue'
-import FeLabel from '../slots/FeLabel.vue'
+
 
 export const options = {
   components:{
-    FeCascader,
-    FeColorPicker,
-    FeInput,
-    FeInputNumber,
-    FeLabel,
-    FeRate,
-    FeSwitch,
-    FeSlider
   },
   library: {
     'el-cascader': {
@@ -24,18 +9,18 @@ export const options = {
       component: 'FeCascader',
       slotProps: {
         component: [
-          "beforeFilter",
-          "clearable",
-          "collapseTags",
-          "debounce",
-          "disabled",
-          "filterMethod",
-          "options",
-          "placeholder",
-          "popperClass",
-          "props",
-          "separator",
-          "showAllLevels",
+          "beforeFilter", 
+          "clearable", 
+          "collapseTags", 
+          "debounce", 
+          "disabled", 
+          "filterMethod", 
+          "options", 
+          "placeholder", 
+          "popperClass", 
+          "props", 
+          "separator", 
+          "showAllLevels", 
           "size"
         ]
       }
@@ -145,6 +130,3 @@ export const options = {
   }
 }
 
-export default function (instance) {
-  instance.extend(options)
-}
