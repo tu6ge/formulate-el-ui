@@ -3,6 +3,8 @@ name: Public Vscode Plugin
 on:
   push:
     branches: [ master ]
+    paths:
+      - "vscode-plugin/*"
 
 jobs:
   publish:
