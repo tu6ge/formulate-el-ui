@@ -1,0 +1,29 @@
+name: Public Vscode Plugin
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    name: 'publish'
+
+    environment: vsce
+
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Install and Build 🔧
+        run: |
+          cd vscode-plugin
+          npm install
+
+      - name: 'Publish to visual studio marketplace'
+        uses: tu6ge/vsce-publish@master
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        with:
+          default_branch: 'master'
+          dir: "vscode-plugin"
