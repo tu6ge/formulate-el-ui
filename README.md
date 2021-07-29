@@ -143,7 +143,11 @@ element-ui 的 `el-form-item` 组件，当加上了 `required` prop 后，会显
 
 ## 文档
 
-查看 [vueformulate 文档](https://vueformulatecom-braid.vercel.app/)，另外，还有 [中文文档](https://tu6ge.github.io/vueformulate.com/zh/)
+查看 [vueformulate 文档](https://vueformulatecom-braid.vercel.app/zh)
+
+## 支持
+
+已推出辅助开发的 vscode 插件，可以点击 [formulate-el-helper](https://marketplace.visualstudio.com/items?itemName=tu6ge.formulate-el-helper) 安装
 
 # 星星
 
