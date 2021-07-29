@@ -1,70 +1,82 @@
-# demo2 README
+<p>
+  <h1 align="center">Formulate-el-ui Helper</h1>
+</p>
 
-This is the README for your extension "demo2". After writing up a brief description, we recommend including the following sections.
+<p align="center">
+  <a href="https://github.com/tu6ge/vueformulate-vscode/issues">
+    <img src="https://img.shields.io/github/issues/tu6ge/vueformulate-vscode">
+  </a>
+  <a href="https://github.com/tu6ge/vueformulate-vscode.git">
+    <img src="https://img.shields.io/github/forks/tu6ge/vueformulate-vscode">
+  </a>
+  <a href="https://github.com/tu6ge/vueformulate-vscode.git">
+    <img src="https://img.shields.io/github/stars/tu6ge/vueformulate-vscode">
+  </a>
+  <a href="https://github.com/tu6ge/vueformulate-vscode/blob/master/LICENSE.MD">
+    <img src="https://img.shields.io/github/license/tu6ge/vueformulate-vscode">
+  </a>
+  <br>
+</p>
+
+> Vue Formulate Helper is a VS Code extension for Vue Formulate. support english and chinese.
+
+Vue Formulate is a form validation build by vue
+
+使用 [formulate-el-ui](https://github.com/tu6ge/formulate-el-ui) 可以在已有的 element-ui 项目中方便的使用 Vue Formulate
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### VueformulateInput autocomplete and documents link
 
-For example if there is an image subfolder under your extension project workspace:
+[![WgEKbR.gif](https://z3.ax1x.com/2021/07/25/WgEKbR.gif)](https://imgtu.com/i/WgEKbR)
 
-\!\[feature X\]\(images/feature-x.png\)
+### VueformulateForm autocomplete and documents link
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+[![WgENKH.gif](https://z3.ax1x.com/2021/07/25/WgENKH.gif)](https://imgtu.com/i/WgENKH)
 
-## Requirements
+### hover show document info
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+[![WgV6Fx.gif](https://z3.ax1x.com/2021/07/25/WgV6Fx.gif)](https://imgtu.com/i/WgV6Fx)
 
-## Extension Settings
+### VueformulateInput 自动补全和文档链接
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+[![WgErPf.gif](https://z3.ax1x.com/2021/07/25/WgErPf.gif)](https://imgtu.com/i/WgErPf)
 
-For example:
+### VueformulateForm 自动补全和文档链接
 
-This extension contributes the following settings:
+[![WgEyRS.gif](https://z3.ax1x.com/2021/07/25/WgEyRS.gif)](https://imgtu.com/i/WgEyRS)
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+### 鼠标悬停显示文档
 
-## Known Issues
+[![WgEgMQ.gif](https://z3.ax1x.com/2021/07/25/WgEgMQ.gif)](https://imgtu.com/i/WgEgMQ)
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## Install
 
-## Release Notes
+- search “vueformulate” in vscode marketplace, and install it
 
-Users appreciate release notes as you update your extension.
+- use web link , [Plugin link](https://marketplace.visualstudio.com/items?itemName=tu6ge.vueformulate-helper)
 
-### 1.0.0
+## 安装
 
-Initial release of ...
+- 在 vscode 应用商店中搜索 `vueformulate` 点击安装
 
-### 1.0.1
+- 打开 [插件链接](https://marketplace.visualstudio.com/items?itemName=tu6ge.vueformulate-helper) 根据页面指引安装
 
-Fixed issue #.
+## Support
 
-### 1.1.0
+* Vue
 
-Added features X, Y, and Z.
+## Contribution
 
------------------------------------------------------------------------------------------------------------
-## Following extension guidelines
+If you want to help improve this project, Please fork and initiate. a pull request after you fix some bugs or finished some new features. Your pull request will make Vue Formulate Helper better.
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+## Thanks
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+Element-UI-Helper
 
-## Working with Markdown
+## LICENSE
 
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+![https://img.shields.io/github/license/tu6ge/vueformulate-vscode](https://img.shields.io/github/license/tu6ge/vueformulate-vscode)
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+## **Enjoy yourself!**
 
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
