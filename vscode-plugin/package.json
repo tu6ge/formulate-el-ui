@@ -3,6 +3,7 @@
 	"displayName": "Formulate Element UI Helper",
 	"description": "Formulate Element UI Helper",
 	"version": "0.1.0",
+	"publisher": "tu6ge",
 	"engines": {
 		"vscode": "^1.50.0"
 	},
