@@ -149,6 +149,14 @@ element-ui 的 `el-form-item` 组件，当加上了 `required` prop 后，会显
 
 已推出辅助开发的 vscode 插件，可以点击 [formulate-el-helper](https://marketplace.visualstudio.com/items?itemName=tu6ge.formulate-el-helper) 安装
 
+[![vscode](https://vsmarketplacebadge.apphb.com/version-short/tu6ge.formulate-el-helper.svg)](https://marketplace.visualstudio.com/items?itemName=tu6ge.formulate-el-helper)
+[![](https://vsmarketplacebadge.apphb.com/installs/tu6ge.formulate-el-helper.svg
+)](https://marketplace.visualstudio.com/items?itemName=tu6ge.formulate-el-helper)
+[![](https://vsmarketplacebadge.apphb.com/downloads/tu6ge.formulate-el-helper.svg
+)](https://marketplace.visualstudio.com/items?itemName=tu6ge.formulate-el-helper)
+[![](https://vsmarketplacebadge.apphb.com/rating-star/tu6ge.formulate-el-helper.svg
+)](https://marketplace.visualstudio.com/items?itemName=tu6ge.formulate-el-helper)
+
 # 星星
 
 如果你感觉好用，就给项目打个星星吧 ^_^
