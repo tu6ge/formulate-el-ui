@@ -160,3 +160,7 @@ element-ui 的 `el-form-item` 组件，当加上了 `required` prop 后，会显
 # 星星
 
 如果你感觉好用，就给项目打个星星吧 ^_^
+
+# 相关推荐
+
+- [*Vue Formulate Helper*](https://marketplace.visualstudio.com/items?itemName=tu6ge.vueformulate-helper) : Vue Formulate 的 VS Code 代码提示插件
