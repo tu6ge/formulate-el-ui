@@ -145,6 +145,10 @@ element-ui 的 `el-form-item` 组件，当加上了 `required` prop 后，会显
 
 查看 [vueformulate 文档](https://vueformulatecom-braid.vercel.app/zh)
 
+# License
+
+MIT
+
 # VS Code 代码提示插件
 
 已推出辅助开发的 vscode 插件，可以点击 [formulate-el-helper](https://marketplace.visualstudio.com/items?itemName=tu6ge.formulate-el-helper) 安装
