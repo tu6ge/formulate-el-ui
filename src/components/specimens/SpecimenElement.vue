@@ -31,6 +31,15 @@
       />
     </div>
     <div class="specimen">
+      <h3>禁用</h3>
+      <FormulateInput
+        label="个性签名"
+        type="el-input"
+        disabled
+        help="个性签名"
+      />
+    </div>
+    <div class="specimen">
       <h3>密码框</h3>
       <FormulateInput
         label="密码"
@@ -87,6 +96,14 @@
       />
     </div>
     <div class="specimen">
+      <h3>禁用</h3>
+      <FormulateInput
+        label="数量"
+        disabled
+        type="el-input-number"
+      />
+    </div>
+    <div class="specimen">
       <h3>严格步数</h3>
       <FormulateInput
         label="数量"
@@ -111,6 +128,15 @@
       <FormulateInput
         label="你是否喜欢"
         type="el-switch"
+        v-model="switchValue"
+      />
+    </div>
+    <div class="specimen">
+      <h3>禁用</h3>
+      <FormulateInput
+        label="你是否喜欢"
+        type="el-switch"
+        disabled
         v-model="switchValue"
       />
     </div>

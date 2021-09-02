@@ -60,6 +60,7 @@ export const options = {
 
           'autosize',
           'clearable',
+          'disabled',
           'maxlength',
           'minlength',
           'rows',
@@ -73,6 +74,7 @@ export const options = {
       component: 'FeInputNumber',
       slotProps: {
         component: [
+          'disabled',
           'min',
           'max',
           'step',
@@ -108,6 +110,7 @@ export const options = {
       component: 'FeSwitch',
       slotProps: {
         component: [
+          'disabled',
           'activeText',
           'inactiveText',
           'activeColor',
