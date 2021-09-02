@@ -4,6 +4,7 @@
 
 <a href="https://www.npmjs.com/package/formulate-el-ui"><img alt="npm" src="https://img.shields.io/npm/v/formulate-el-ui"></a>
 <a href="https://github.com/tu6ge/formulate-el-ui"><img alt="GitHub" src="https://img.shields.io/github/license/tu6ge/formulate-el-ui"></a>
+![](https://img.shields.io/npm/dm/formulate-el-ui)
 
 本项目为 `vueformulate` 项目加上了 `element-ui` 皮肤，可以让你在 `element-ui` 项目中使用 `vueformulate` 时保持风格统一
 
