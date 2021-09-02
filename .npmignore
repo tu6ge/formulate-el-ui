@@ -1,0 +1,13 @@
+/.github
+/coverage
+/node_modules
+/preview
+/public
+/test
+/tests
+/vscode-plugin
+babel.config.js
+deploy.sh
+jest.config.js
+vue.config.js
+yarn.lock
