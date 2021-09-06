@@ -4,6 +4,7 @@
   "private": false,
   "description": "vue formulate 的一个用于兼容 element-ui 的插件",
   "author": "tu6ge <772364230@qq.com>",
+  "homepage": "https://tu6ge.github.io/formulate-el-ui/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "npm run build:core && npm run build:css",
