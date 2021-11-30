@@ -35,7 +35,7 @@ const localizedValidationMessages = {
    * Valid accepted value.
    */
   accepted: function ({ vm }) {
-    return `请同意${vm.context.label}。`
+    return `请同意${vm.context.label}`
   },
 
   /**
@@ -43,23 +43,23 @@ const localizedValidationMessages = {
    */
   after: function ({ vm, args }) {
     if (Array.isArray(args) && args.length) {
-      return `${vm.context.label} 必须在 ${args[0]} 之后。`
+      return `${vm.context.label} 必须在 ${args[0]} 之后`
     }
-    return `${vm.context.label} 必须是以后的日期。`
+    return `${vm.context.label} 必须是以后的日期`
   },
 
   /**
    * The value is not a letter.
    */
   alpha: function ({ vm }) {
-    return `${vm.context.label} 只能包含字母。`
+    return `${vm.context.label} 只能包含字母`
   },
 
   /**
    * Rule: checks if the value is alpha numeric
    */
   alphanumeric: function ({ vm }) {
-    return `${vm.context.label} 只能包含字母或数字。`
+    return `${vm.context.label} 只能包含字母或数字`
   },
 
   /**
@@ -69,7 +69,7 @@ const localizedValidationMessages = {
     if (Array.isArray(args) && args.length) {
       return `${vm.context.label} 必须在 ${args[0]} 之前`
     }
-    return `${vm.context.label} 必须是以前的日期。`
+    return `${vm.context.label} 必须是以前的日期`
   },
 
   /**
@@ -78,16 +78,16 @@ const localizedValidationMessages = {
   between: function ({ vm, value, args }) {
     const force = Array.isArray(args) && args[2] ? args[2] : false
     if ((!isNaN(value) && force !== 'length') || force === 'value') {
-      return `${vm.context.label} 必须在 ${args[0]} 和 ${args[1]} 之间。`
+      return `${vm.context.label} 必须在 ${args[0]} 和 ${args[1]} 之间`
     }
-    return `${vm.context.label} 必须在 ${args[0]} 和 ${args[1]} 字符长度之间。`
+    return `${vm.context.label} 必须在 ${args[0]} 和 ${args[1]} 字符长度之间`
   },
 
   /**
    * The confirmation field does not match
    */
   confirm: function ({ vm }) {
-    return `${vm.context.label} 不匹配。`
+    return `${vm.context.label} 不匹配`
   },
 
   /**
@@ -95,16 +95,16 @@ const localizedValidationMessages = {
    */
   date: function ({ vm, args }) {
     if (Array.isArray(args) && args.length) {
-      return `${vm.context.label} 日期无效，请使用 ${args[0]} 格式。`
+      return `${vm.context.label} 日期无效，请使用 ${args[0]} 格式`
     }
-    return `${vm.context.label} 日期无效。`
+    return `${vm.context.label} 日期无效`
   },
 
   /**
    * The default render method for error messages.
    */
   default: function () {
-    return `此输入无效。`
+    return `此输入无效`
   },
 
   /**
@@ -112,9 +112,9 @@ const localizedValidationMessages = {
    */
   email: function ({ value }) {
     if (!value) {
-      return '请输入有效的电子邮箱地址。'
+      return '请输入有效的电子邮箱地址'
     }
-    return `“${value}” 不是一个有效的电子邮箱地址。`
+    return `“${value}” 不是一个有效的电子邮箱地址`
   },
 
   /**
@@ -122,9 +122,9 @@ const localizedValidationMessages = {
    */
   endsWith: function ({ value }) {
     if (!value) {
-      return `无效的结尾值。`
+      return `无效的结尾值`
     }
-    return `“${value}” 包含无效的结尾值。`
+    return `“${value}” 包含无效的结尾值`
   },
 
   /**
@@ -132,16 +132,16 @@ const localizedValidationMessages = {
    */
   in: function ({ vm, value }) {
     if (typeof value === 'string' && value) {
-      return `“${value}” 是 ${vm.context.label} 不允许的值。`
+      return `“${value}” 是 ${vm.context.label} 不允许的值`
     }
-    return `${vm.context.label} 包含不允许的值。`
+    return `${vm.context.label} 包含不允许的值`
   },
 
   /**
    * Value is not a match.
    */
   matches: function ({ vm }) {
-    return `${vm.context.label} 包含不允许的值。`
+    return `${vm.context.label} 包含不允许的值`
   },
 
   /**
@@ -155,7 +155,7 @@ const localizedValidationMessages = {
     if ((!isNaN(value) && force !== 'length') || force === 'value') {
       return `${vm.context.label} 必须小于或等于 ${args[0]}.`
     }
-    return `${vm.context.label} 必须小于或等于 ${args[0]} 字符长度.`
+    return `${vm.context.label} 必须小于或等于 ${args[0]} 字符长度`
   },
 
   /**
@@ -174,9 +174,9 @@ const localizedValidationMessages = {
     }
     const force = Array.isArray(args) && args[1] ? args[1] : false
     if ((!isNaN(value) && force !== 'length') || force === 'value') {
-      return `${vm.context.label} 最少是 ${args[0]}.`
+      return `${vm.context.label} 最少是 ${args[0]}`
     }
-    return `${vm.context.label} 最少 ${args[0]} 字符长度。`
+    return `${vm.context.label} 最少 ${args[0]} 字符长度`
   },
 
   /**
@@ -190,14 +190,14 @@ const localizedValidationMessages = {
    * The field is not a number
    */
   number: function ({ vm }) {
-    return `${vm.context.label} 必须是数字。`
+    return `${vm.context.label} 必须是数字`
   },
 
   /**
    * Required field.
    */
   required: function ({ vm }) {
-    return `${vm.context.label} 是必填项。`
+    return `${vm.context.label} 是必填项`
   },
 
   /**
@@ -214,7 +214,7 @@ const localizedValidationMessages = {
    * Value is not a url.
    */
   url: function () {
-    return `请输入正确的网址。`
+    return `请输入正确的网址`
   }
 }
 
