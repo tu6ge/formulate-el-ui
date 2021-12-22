@@ -121,7 +121,7 @@ Vue.use(VueFormulate, {
 | 组件 | FormulateInput type | 支持的 prop |
 |----|----|----|
 | Input | `el-input` | autosize, clearable, maxlength, minlength,rows, disabled <br> showPassword, showWordLimit, elType (值为`textarea` 时，是多行文本框) |
-| Cascader | `el-cascader` | beforeFilter, clearable, collapseTags, debounce,<br> disabled, filterMethod, options, placeholder, popperClass,<br> props, separator, showAllLevels, size |
+| Cascader | `el-cascader` | beforeFilter, clearable, collapseTags, debounce,<br> disabled, filterMethod, label, options, placeholder, popperClass,<br> props, separator, showAllLevels, size,value |
 | ColorPicker 颜色选择器 | `el-color-picker` | colorFormat,predefine,showAlpha |
 | InputNumber | `el-input-number` | min,max,step,stepStrictly,precision,disabled |
 | Rate | `el-rate` | allowHalf,colors,disabledVoidColor,disabledVoidIconClass<br>,highThreshold,iconClasses,max,lowThreshold,showScore,showText,<br>texts,testColor,voidColor,voidIconClass |

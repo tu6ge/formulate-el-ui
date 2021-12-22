@@ -30,13 +30,15 @@ export const options = {
           "debounce",
           "disabled",
           "filterMethod",
+          'label',
           "options",
           "placeholder",
           "popperClass",
           "props",
           "separator",
           "showAllLevels",
-          "size"
+          "size",
+          'value'
         ]
       }
     },
