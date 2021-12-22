@@ -30,7 +30,7 @@ export const options = {
           "debounce",
           "disabled",
           "filterMethod",
-          'label',
+          'elLabel',
           "options",
           "placeholder",
           "popperClass",
@@ -38,7 +38,7 @@ export const options = {
           "separator",
           "showAllLevels",
           "size",
-          'value'
+          'elValue'
         ]
       }
     },

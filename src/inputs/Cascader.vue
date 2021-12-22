@@ -6,6 +6,8 @@
     <el-cascader 
       v-model="context.model"
       v-bind="context.slotProps.component"
+      :label="context.slotProps.component.elLabel"
+      :value="context.slotProps.component.elValue"
       :options="context.options"
       @change="context.rootEmit('change', $event)"
       @expand-change="context.rootEmit('expand-change', $event)"
