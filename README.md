@@ -131,7 +131,7 @@ Vue.use(VueFormulate, {
 ### 必填字段 +v0.2.5
 
 element-ui 的 `el-form-item` 组件，当加上了 `required` prop 后，会显示一个红色 `*` 提示用户该字段必填，现在本项目也已支持，只要是
-`FormulateInput` 的验证规则中包含 `required` ,则会默认加上这个红色 `*` ，如果希望强制不显示，则可以在 `FormulateInput` 上设置 `requiredTip` prop 为 `false`,即可：
+`FormulateInput` 的验证规则中包含 `required` ,则会默认加上这个红色 `*` ，如果不想显示，则可以在 `FormulateInput` 上设置 `requiredTip` prop 为 `false`,即可：
 
 ```
 <FormulateInput :required-tip="false" />
