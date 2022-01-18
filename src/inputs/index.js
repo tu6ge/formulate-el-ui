@@ -3,6 +3,7 @@ import FeColorPicker from './ColorPicker.vue'
 import FeInput from './Input.vue'
 import FeInputNumber from './InputNumber.vue'
 import FeRate from './Rate.vue'
+import FeSelect from './Select.vue'
 import FeSwitch from './Switch.vue'
 import FeSlider from './Slider.vue'
 import FeLabel from '../slots/FeLabel.vue'
@@ -15,6 +16,7 @@ export const options = {
     FeInputNumber,
     FeLabel,
     FeRate,
+    FeSelect,
     FeSwitch,
     FeSlider
   },
@@ -104,6 +106,19 @@ export const options = {
           'testColor',
           'voidColor',
           'voidIconClass'
+        ]
+      }
+    },
+    'el-select': {
+      classification: 'select',
+      component: 'FeSelect',
+      slotProps: {
+        component: [
+          'allowCreate',
+          'clearable',
+          'collapseTags',
+          'disabled',
+          'multiple',
         ]
       }
     },
