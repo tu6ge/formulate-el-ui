@@ -125,8 +125,9 @@ Vue.use(VueFormulate, {
 | ColorPicker 颜色选择器 | `el-color-picker` | colorFormat,predefine,showAlpha |
 | InputNumber | `el-input-number` | min,max,step,stepStrictly,precision,disabled |
 | Rate | `el-rate` | allowHalf,colors,disabledVoidColor,disabledVoidIconClass<br>,highThreshold,iconClasses,max,lowThreshold,showScore,showText,<br>texts,testColor,voidColor,voidIconClass |
-| Switch | `el-switch` | activeText,inactiveText,activeColor,inactiveColor, disabled |
+| Select | `el-select` | allowCreate,clearable,collapseTags,filterable, disabled,multiple |
 | Slider | `el-slider` | formatTooltip,min,marks,max,scoreTemplate,<br>showTooltip,step,showStops,showInput,showInputControls,<br>range,vertical,height |
+| Switch | `el-switch` | activeText,inactiveText,activeColor,inactiveColor, disabled |
 
 ### 必填字段 +v0.2.5
 

@@ -9,11 +9,18 @@
       v-bind="context.slotProps.component"
       @blur="context.blurHandler"
       v-on="$listeners"
-    />
+    >
+      <el-option
+        v-for="(item,index) in context.options"
+        :key="index"
+        :label="item.label"
+        :value="item.value"
+      ></el-option>
+    </el-select>
   </div>
 </template>
 <script>
-import {Select} from 'element-ui'
+import {Select,Option} from 'element-ui'
 
 export default {
   name:'fe-select',
@@ -24,7 +31,8 @@ export default {
     }
   },
   components: {
-    [Select.name]: Select
+    [Select.name]: Select,
+    [Option.name]: Option,
   }
 }
 </script>

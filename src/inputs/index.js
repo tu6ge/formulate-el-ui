@@ -117,6 +117,7 @@ export const options = {
           'allowCreate',
           'clearable',
           'collapseTags',
+          'filterable',
           'disabled',
           'multiple',
         ]
