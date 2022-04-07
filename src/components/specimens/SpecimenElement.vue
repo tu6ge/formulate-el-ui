@@ -122,6 +122,17 @@
         :max="10"
       />
     </div>
+    <div class="specimen">
+      <h3>尺寸</h3>
+      <FormulateInput
+        label="数量"
+        type="el-input-number"
+        size="small"
+        :precision="2"
+        :step="0.1"
+        :max="10"
+      />
+    </div>
     <h2>el-switch 开关</h2>
     <div class="specimen">
       <h3>普通</h3>

@@ -81,6 +81,7 @@ export const options = {
           'disabled',
           'min',
           'max',
+          'size',
           'step',
           'stepStrictly',
           'precision',
