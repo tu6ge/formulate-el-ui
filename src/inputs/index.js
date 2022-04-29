@@ -52,6 +52,7 @@ export const options = {
           'colorFormat',
           'predefine',
           'showAlpha',
+          'size',
         ]
       }
     },
@@ -70,6 +71,7 @@ export const options = {
           'rows',
           'showPassword',
           'showWordLimit',
+          'size',
         ]
       }
     },
@@ -103,6 +105,7 @@ export const options = {
           'lowThreshold',
           'showScore',
           'showText',
+          'size',
           'texts',
           'testColor',
           'voidColor',
@@ -121,6 +124,7 @@ export const options = {
           'filterable',
           'disabled',
           'multiple',
+          'size',
         ]
       }
     },
@@ -133,7 +137,8 @@ export const options = {
           'activeText',
           'inactiveText',
           'activeColor',
-          'inactiveColor'
+          'inactiveColor',
+          'size',
         ]
       }
     },
@@ -152,6 +157,7 @@ export const options = {
           'showStops',
           'showInput',
           'showInputControls',
+          'size',
           'range',
           'vertical',
           'height',
