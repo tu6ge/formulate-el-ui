@@ -37,5 +37,15 @@
         help="您可以通过按住 command (mac) 或 ctrl (windows) 来选择多个选项。"
       />
     </div>
+    <div class="specimen">
+      <h3>带多选功能的下拉选择器</h3>
+      <FormulateInput
+        label="在访问一个炎热的星球时，您最喜欢的冰淇淋口味是什么？"
+        type="el-select"
+        size="3"
+        :options="{vanilla: '香草', chocolate: '巧克力', cherry: '樱桃', lemon: '柠檬'}"
+        help="您可以通过按住 command (mac) 或 ctrl (windows) 来选择多个选项。"
+      />
+    </div>
   </div>
 </template>
