@@ -5,6 +5,7 @@ on:
     branches: [ master ]
     paths:
       - "src/components/*"
+      - "src/components/specimens/*"
       - "src/main.js"
       - "package.json"
 
